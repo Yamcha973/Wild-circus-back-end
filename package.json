@@ -1,0 +1,25 @@
+{
+  "name": "wild-circus-back-end",
+  "version": "1.0.0",
+  "description": "The last checkpoint",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yamcha973/Wild-circus-back-end.git"
+  },
+  "author": "Jessica Mendes Dos Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yamcha973/Wild-circus-back-end/issues"
+  },
+  "homepage": "https://github.com/Yamcha973/Wild-circus-back-end#readme"
+}
