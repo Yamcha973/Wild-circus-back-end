@@ -16,10 +16,12 @@ app.use(
     extended: true,
   }),
 );
+
 app.use('/api', router);
 app.get('/homeadmin', passport.authenticate('jwt', { session: false }), (req, res) => {
   res.send(req.user);
 });
+
 
 module.exports = app;
 

@@ -5,7 +5,7 @@ const hbs = require('nodemailer-express-handlebars');
 
 // configuration de la boîte mail qui va envoyer les mails
 const transporter = nodemailer.createTransport({
-  service: 'Hotmail',
+  service: 'Gmail',
   auth: {
     user: process.env.EMAIL,
     pass: process.env.PASSWORD,
