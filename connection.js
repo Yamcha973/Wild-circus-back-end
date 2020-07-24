@@ -11,6 +11,32 @@ const config = {
 
 const connection = mysql.createPool(config);
 
+const query = (...args) => new Promise((resolve, reject) => {
+  connection.query(...args, (err, res) => {
+    if (err) {
+      reject(err);
+    } else {
+      resolve(res);
+    }
+  });
+});
 
-module.exports = connection;
-    
+const closeConnection = () => new Promise((resolve, reject) => {
+  if (connection) {
+    connection.end((err, res) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(res);
+      }
+    });
+  } else {
+    resolve();
+  }
+});
+
+module.exports = {
+  connection,
+  closeConnection,
+  query,
+};
