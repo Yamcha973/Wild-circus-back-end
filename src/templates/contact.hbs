@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h2 {
+            color: black;
+            text-align: center;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        div {
+            
+            margin-top: 30px;
+
+        }
+    p {
+        text-align: justify;
+        width: 80%;
+        margin-top: 30px;
+    }
+    </style>
+</head>
+
+<body>
+    <h2>Bonjour, vous avez reçu un nouveau message. </h2>
+    <div>
+        <h3>Demande de la part de {{prenom}} {{nom}}</h3>
+        <p>{{comment}}</p>
+    </div>
+</body>
+
+</html>
